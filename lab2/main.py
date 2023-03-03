@@ -66,6 +66,6 @@ print("\n a = ", a,
       "\n b = ", b)
 print("\n X(76) = ", 76*a+b)
 
-plt.scatter(x, y)
+plt.scatter([i[0] for i in data],[i[1] for i in data])
 plt.plot([i*a+b for i in y], y, color='red')
 plt.show()
