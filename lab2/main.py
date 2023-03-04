@@ -14,14 +14,12 @@ with open('D:/failiki/university/2 курс/ТВИМС/5/r4z2.csv', 'r') as csvf
     for row in reader:
         data.append([float(row[0]), float(row[1])])
 
-data = sorted(data)
 print(data)
 
 x = [i[0] for i in data]
 print("x = ", x)
 
 y = [i[1] for i in data]
-y=sorted(y)
 print("y = ", y)
 
 def Average(x): #Среднее
